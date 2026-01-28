@@ -20,7 +20,7 @@ public class LoggerAspect {
 
     @After("execution(public * com.telusco.joblisting.controller.PostController.getAllPosts())")
     public void logAfter() {
-        LOG.warn("Logger has been triggered after getAllPosts() was triggered");
+        LOG.warn("Logger has been triggered after getAllPosts() was called");
     }
 
 
